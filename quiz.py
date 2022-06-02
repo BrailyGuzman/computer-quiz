@@ -4,40 +4,49 @@ playing = input("Do you want to play? Y/N: ")
 if playing != "Y":
     quit()
 
-print("Alright, Let's play! :) ")
+print("\nAlright, Let's play! :) ")
+score = 6
 
-answer_1 = input("What does CPU stand for? ")
-if answer_1 == "central processing unit" or "Central Processing Unit":
+answer_1 = input("\nWhat does CPU stand for? ").upper()
+if answer_1 == "central processing unit":
     print("Correct!")
 else:
     print("Incorrect!")
-
-answer_2 = input("What does GPU stand for? ")
-if answer_2 == "graphics processing unit" or "Graphics Processing Unit":
+    score - 1
+    
+answer_2 = input("\nWhat does GPU stand for? ").upper()
+if answer_2 == "graphics processing unit":
     print("Correct!")
 else:
     print("Incorrect!")
-
-answer_3 = input("What does RAM stand for? ")
-if answer_3 == "random access memory" or "Random Access Memory":
+    score - 1
+    
+answer_3 = input("\nWhat does RAM stand for? ").upper()
+if answer_3 == "random access memory":
     print("Correct!")
 else:
     print("Incorrect!")
+    score - 1
 
-answer_4 = input("What does PSU stand for? ")
-if answer_4 == "power supply unit" or "Power Supply Unit":
+answer_4 = input("\nWhat does PSU stand for? ").upper()
+if answer_4 == "power supply unit":
     print("Correct!")
 else:
     print("Incorrect!")
-
-answer_5 = input("What does HDD stand for? ")
-if answer_5 == "hard disk drives" or "Hard Disk Drive":
+    score - 1
+    
+answer_5 = input("\nWhat does HDD stand for? ").upper()
+if answer_5 == "hard disk drives":
     print("Correct!")
 else:
     print("Incorrect! ")
-
-answer_6 = input("What does SSD stand for: ")
-if answer_6 == "solid state drives" or "Solid State Drives":
+    score - 1
+    
+answer_6 = input("\nWhat does SSD stand for: ").upper()
+if answer_6 == "solid state drives":
     print("Correct!")
 else:
     print("Incorrect!")
+    score - 1
+    
+print(f"You Have Completed The Quiz. Your Score is {score}/10")
